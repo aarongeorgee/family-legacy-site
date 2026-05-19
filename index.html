@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>The Memory Dimension</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;700&family=Outfit:wght@200;300;400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="custom-cursor"></div>
+    <div class="cursor-glow"></div>
+
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-text" id="loading-text">ENTERING THE MEMORY DIMENSION</div>
+        <div class="loading-bar">
+            <div class="loading-progress"></div>
+        </div>
+    </div>
+
+    <button id="audio-toggle" class="audio-btn">
+        <span class="audio-icon">Sound On</span>
+    </button>
+
+    <canvas id="particles-canvas"></canvas>
+
+    <audio id="ambient-audio" loop autoplay preload="auto">
+        <source src="assets/audio/Legacy%20in%20Moonwater.mp3" type="audio/mpeg">
+    </audio>
+
+
+
+    <nav class="floating-nav">
+        <ul>
+            <li><a href="#home" class="active">Ethereal</a></li>
+            <li><a href="#heritage">Heritage</a></li>
+            <li><a href="#mariyam-varreed">Mariyam V.</a></li>
+            <li><a href="#mariyamma-ittoop">Mariyamma I.</a></li>
+            <li><a href="#ittoop-pm">Ittoop P.M.</a></li>
+            <li><a href="#mathew-pi">Mathew P.I.</a></li>
+            <li><a href="#joshy-pi">Joshy P.I.</a></li>
+            <li><a href="#varghese-pi">Varghese P.I.</a></li>
+        </ul>
+    </nav>
+
+    <main id="scroll-container">
+        <!-- Scenes -->
+        <section id="home" class="scene active-scene">
+            <div class="scene-content">
+                <div class="title-container">
+                    <h1 class="cinematic-title">Echoes of <br>Eternity</h1>
+                    <p class="cinematic-subtitle">A digital sanctuary preserving memories through immersive art.</p>
+                </div>
+            </div>
+
+            <!-- Ultra-Realistic Centerpiece -->
+            <div class="memorial-centerpiece">
+                <div class="centerpiece-flowers"></div>
+                <div class="petals-container" id="petals-container"></div>
+
+                <div class="candle-wrapper">
+                    <div class="candle-glow"></div>
+                    <div class="candle-smoke">
+                        <div class="smoke-particle s1"></div>
+                        <div class="smoke-particle s2"></div>
+                        <div class="smoke-particle s3"></div>
+                    </div>
+                    <div class="candle-body">
+                        <div class="wax-drip d1"></div>
+                        <div class="wax-drip d2"></div>
+                        <div class="wax-drip d3"></div>
+                        <div class="candle-wick"></div>
+                        <div class="candle-flame">
+                            <div class="flame-core"></div>
+                            <div class="flame-halo"></div>
+                        </div>
+                        <div class="embers-container">
+                            <div class="ember e1"></div>
+                            <div class="ember e2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scroll-indicator">
+                <span>Scroll</span>
+                <div class="scroll-line"></div>
+            </div>
+            <div class="credit home-credit">Made by Aaron George Elanjickal</div>
+            <div class="atmospheric-glow home-glow"></div>
+        </section>
+
+        <section id="heritage" class="scene">
+            <div class="scene-content">
+                <div class="title-container">
+                    <h1 class="cinematic-title" style="font-size: clamp(2.5rem, 6vw, 6rem);">Pynadath <br><span
+                            style="font-size: 0.65em; display: inline-block; margin-top: -0.2em;">Iriyattu</span></h1>
+                    <p class="cinematic-subtitle">A Legacy of Togetherness, Traditions, and Love.</p>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>Scroll</span>
+                <div class="scroll-line"></div>
+            </div>
+            <div class="credit home-credit">A Timeless Digital Home</div>
+            <div class="atmospheric-glow home-glow"></div>
+        </section>
+
+        <section id="mariyam-varreed" class="scene person-scene">
+            <div class="scene-content">
+                <div class="memory-details left-aligned">
+                    <h2 class="person-name">Mariyam Varreed</h2>
+                    <div class="person-meta">
+                        <span class="age">Age 87</span>
+                        <span class="date">22/12/1991</span>
+                    </div>
+                    <p class="person-quote long-quote">
+                        Mariyam Vareed (born 1904, Mambra) was married to Vareed of Pynadath, Nayathode. She was a
+                        devoted homemaker known for
+                        simplicity, dedication, and strong family values. She had two daughters, Mariyamma and Sosamma,
+                        whom she raised with care and discipline. Mariyamma later married Ittoop of Pynadath, Nayathode,
+                        and Sosamma married Iteerah of the Telappilli family, Peechanikadu.
+
+                    </p>
+                </div>
+                <div class="portrait-container right-aligned floating-slow">
+                    <div class="abstract-portrait mariyam-portrait"></div>
+                </div>
+            </div>
+            <div class="atmospheric-glow mariyam-glow"></div>
+            <div class="scroll-indicator">
+                <span>Scroll</span>
+                <div class="scroll-line"></div>
+            </div>
+        </section>
+
+        <section id="mariyamma-ittoop" class="scene person-scene">
+            <div class="scene-content">
+                <div class="memory-details left-aligned">
+                    <h2 class="person-name">Mariyamma Ittoop</h2>
+                    <div class="person-meta">
+                        <span class="age">Age 60</span>
+                        <span class="date">10/02/1994</span>
+                    </div>
+                    <p class="person-quote long-quote">Mariyamma Ittoop (born 1934, Maickavu) was the daughter of Vareed
+                        and Mariyam Vareed. She was married to Ittoop P. M. of the Pynadath (Iriyattu) family,
+                        Nayathode. She supported her family through farming and household responsibilities. She was
+                        blessed with five children: Mathew, Varghese, Joshy, Molly, and Saji. Her life reflected
+                        dedication, simplicity, and strong commitment to traditional family values.
+
+                    </p>
+                </div>
+                <div class="portrait-container right-aligned floating-slow">
+                    <div class="abstract-portrait mariyamma-portrait"></div>
+                </div>
+            </div>
+            <div class="atmospheric-glow mariyamma-glow"></div>
+            <div class="scroll-indicator">
+                <span>Scroll</span>
+                <div class="scroll-line"></div>
+            </div>
+        </section>
+
+        <section id="ittoop-pm" class="scene person-scene">
+            <div class="scene-content">
+                <div class="memory-details left-aligned">
+                    <h2 class="person-name">Ittoop P.M.</h2>
+                    <div class="person-meta">
+                        <span class="age">Age 79</span>
+                        <span class="date">06/04/2009</span>
+                    </div>
+                    <p class="person-quote long-quote">
+                        Ittoop P. M. (born 1930, Nayathode) belonged to the Pynadath (Iriyattu) family. He was married
+                        to Mariyamma, and together they built a strong and loving family based on care, unity, and
+                        responsibility. They had five children: Mathew, Varghese, Joshy, Molly, and Saji, whom they
+                        raised with affection and moral guidance. He was engaged in agriculture and valued education,
+                        discipline, respect, and strong family relationships throughout his life.
+
+                    </p>
+
+
+                </div>
+                <div class="portrait-container right-aligned floating-slow">
+                    <div class="abstract-portrait ittoop-portrait"></div>
+                </div>
+            </div>
+            <div class="atmospheric-glow ittoop-glow"></div>
+            <div class="scroll-indicator">
+                <span>Scroll</span>
+                <div class="scroll-line"></div>
+            </div>
+        </section>
+
+        <section id="mathew-pi" class="scene person-scene">
+            <div class="scene-content">
+                <div class="memory-details left-aligned">
+                    <h2 class="person-name">Mathew P.I.</h2>
+                    <div class="person-meta">
+                        <span class="age">Age 54</span>
+                        <span class="date">16/06/2006</span>
+                    </div>
+                    <p class="person-quote long-quote">Mathew P. I., the eldest son of Ittoop P. M. and Mariyamma
+                        Ittoop,
+                        was born on October 22, 1959. He completed his schooling at MAHSS School, Nedumbassery, followed
+                        by Pre-Degree at Sree Sankara College and a Polytechnic Diploma from Govt. Polytechnic,
+                        Kalamassery. He worked as an Engineer at Travancore Chemical Manufacturing Company Ltd. He
+                        married Mary of Valiyaputhenpurayil, Niranam, on May 14, 1979, and they were blessed with a
+                        daughter, Neethu. He is remembered for his gentle personality and warm, ever-smiling presence,
+                        leaving behind lasting memories in the hearts of his loved ones.
+                    </p>
+                </div>
+                <div class="portrait-container right-aligned floating-slow">
+                    <div class="abstract-portrait mathew-portrait"></div>
+                </div>
+            </div>
+            <div class="atmospheric-glow mathew-glow"></div>
+            <div class="scroll-indicator">
+                <span>Scroll</span>
+                <div class="scroll-line"></div>
+            </div>
+        </section>
+
+        <section id="joshy-pi" class="scene person-scene">
+            <div class="scene-content">
+                <div class="memory-details left-aligned">
+                    <h2 class="person-name">Joshy P.I.</h2>
+                    <div class="person-meta">
+                        <span class="age">Age 65</span>
+                        <span class="date">10/09/2023</span>
+                    </div>
+                    <p class="person-quote long-quote">Joshy P. I. (born 1958) was the son of Ittoop P. M. and Mariyamma
+                        Ittoop. He studied at MAHSS School, Nedumbassery, and later pursued his higher education at Sree
+                        Sankara College,kalady.He worked at Kancor Ingredients Limited,Angamaly. He
+                        married Elizabeth and they were blessed with two sons, Sam Joshy and Mathew Joshy.He will be
+                        fondly
+                        remembered for his loving personality and the warmth he shared with everyone around him.
+
+                    </p>
+                </div>
+                <div class="portrait-container right-aligned floating-slow">
+                    <div class="abstract-portrait joshy-portrait"></div>
+                </div>
+            </div>
+            <div class="atmospheric-glow joshy-glow"></div>
+            <div class="scroll-indicator">
+                <span>Scroll</span>
+                <div class="scroll-line"></div>
+            </div>
+        </section>
+
+        <section id="varghese-pi" class="scene person-scene">
+            <div class="scene-content">
+                <div class="memory-details left-aligned">
+                    <h2 class="person-name">Varghese P.I.</h2>
+                    <div class="person-meta">
+                        <span class="age">Age 74</span>
+                        <span class="date">12/04/2026</span>
+                    </div>
+                    <p class="person-quote long-quote">
+                        Varghese P. I. was born on 10/11/1952 as the second son of Ittoop P. M. and Mariyamma Ittoop. He
+                        completed his schooling at MAHSS School, Nedumbassery, and later worked in the Maintenance
+                        Department at Cochin Shipyard Limited. He married Lissy of the Marangattu family, Vengoor, on
+                        08/06/1981, and they were blessed with two sons, Basil P. Varghese and Jose P. Varghese.His
+                        cheerful presence and caring attitude left a lasting impression on everyone who knew him.
+
+                    </p>
+                </div>
+                <div class="portrait-container right-aligned floating-slow">
+                    <div class="abstract-portrait varghese-portrait"></div>
+                </div>
+            </div>
+            <div class="atmospheric-glow varghese-glow"></div>
+            <div class="scroll-indicator">
+                <span>Scroll</span>
+                <div class="scroll-line"></div>
+            </div>
+        </section>
+
+        <section id="epilogue" class="scene epilogue-scene">
+            <div class="scene-content epilogue-content">
+                <h2 class="cinematic-title epilogue-title"></h2>
+                <p class="cinematic-subtitle">"The legacy of our family is not what we leave for our children, but what
+                    we leave in them."</p>
+                <div class="constellation-map"></div>
+                <button id="back-to-top" class="lux-btn">Return to the Ethereal</button>
+                <div class="credit">Made by Aaron George Elanjickal</div>
+            </div>
+            <div class="atmospheric-glow epilogue-glow"></div>
+        </section>
+    </main>
+
+    <div class="noise-overlay"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
