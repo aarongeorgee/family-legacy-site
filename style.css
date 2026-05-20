@@ -139,7 +139,7 @@ body {
     justify-content: flex-start;
     padding-top: clamp(20vh, 30vh, 35vh);
     align-items: center;
-    transition: opacity 1.2s cubic-bezier(0.19, 1, 0.22, 1), filter 1.2s ease, visibility 1.2s;
+    transition: opacity 1.5s cubic-bezier(0.19, 1, 0.22, 1), filter 1.5s ease, visibility 1.5s;
 }
 
 .loading-text {

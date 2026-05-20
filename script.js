@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     let progress = 0;
     const interval = setInterval(() => {
-        progress += Math.random() * 8 + 5;
+        progress += Math.random() * 6 + 4;
         if (progress >= 100) {
             progress = 100;
             clearInterval(interval);
@@ -16,11 +16,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 setTimeout(() => {
                     loadingScreen.style.display = 'none';
                     document.getElementById('home').classList.add('active-scene');
-                }, 1200);
-            }, 500);
+                }, 1500);
+            }, 600);
         }
         progressBar.style.width = `${progress}%`;
-    }, 100);
+    }, 120);
 
     // --- Audio System ---
     const ambientAudio = document.getElementById('ambient-audio');
